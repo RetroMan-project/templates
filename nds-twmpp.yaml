@@ -6,7 +6,7 @@ nds-twmpp:
   saves-in-roms: true   # TODO: saves are inside roms folder
   states-in-roms: true   # TODO: states are inside roms folder
   roms_path: roms
-  supported_systems:
+  systems:
   - a26
   - a52
   - a78

@@ -6,8 +6,8 @@ rg350-adam:
   saves-in-roms: true   # TODO: saves are inside roms folder
   states: states
   roms_path: roms
-  supported_systems:    # TODO: these are the directory names, they should refer to the original systems that the must be updated with the following folders
-    - 32X
+  systems:    # TODO: these are the directory names, they should refer to the original systems that the must be updated with the following folders
+    - 32x
     - A2600
     - A5200
     - A7800

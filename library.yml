@@ -3,7 +3,13 @@ library:
   name: Library
   template_version: 1.0
 
-  supported_systems:
+  systems:
+    
+    - 32x:
+          name: Mega Drive 32X
+          manufacturer: SEGA
+          system_folders:
+              - 32x
 
     - mame:
         name: MAME

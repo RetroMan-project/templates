@@ -7,7 +7,7 @@ miyoominiv3-onion:
   saves-in-roms: true 
   states-in-roms: true
   roms_path: "."
-  supported_systems:
+  systems:
     - megadrive:
         system_folders:
           - _roms_path_
