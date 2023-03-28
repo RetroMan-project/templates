@@ -3,7 +3,7 @@ miyoominiv3-onion:
   name: Mega Everdrive X7
   template_version: 0.1
   brand: Krizz
-  gamelist_file: false
+  gamelist_file: null
   saves-in-roms: true 
   states-in-roms: true
   roms_path: "."

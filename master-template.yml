@@ -1,0 +1,38 @@
+# Master template file, use it just for reference
+# the set option is the default one, the bracked options are allowed values
+# value: default (value1, vale2, null, integer, string)
+# where null is not specified means the value is mandatory unless a default value is set
+
+master-template:
+  name: string
+  template_version: string
+  brand: null, string
+  roms_path: ./roms ( string )
+  gamelist_file: gamelist.xml ( string )
+  gamelist_location: {{ $roms_path }} ( string )
+  saves: ./saves ( string )
+  states: ./states ( string )
+  saves-in-roms: false ( bool )   # overrides saves variable
+  states-in-roms: false ( bool )  # overrides states variable
+  systems:
+    - {{ $system_id }}:
+          name: string      # main name
+          name_us: null, string   # additional names
+          name_jp: null, string   # additional names
+          name_eu: null, string   # additional names
+          manufacturer: null, string
+          release_jp: null, date
+          release_eu: null, date
+          release_us: null, date
+          release_uk: null, date
+          release_br: null, date
+          status: supported ( available )
+          emulators:
+            - {{ $emulator1 }}:
+                default: true ( bool )
+                saves: {{ $saves }} ( string )
+                states: {{ $states }} ( string )
+                system_folders: list[string]
+                extensions: list[string]
+            - {{ $emulator2 }}:
+                default: false ( bool )
