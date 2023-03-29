@@ -14,12 +14,21 @@ master-template:
   states: ./states ( string )
   saves-in-roms: false ( bool )   # overrides saves variable
   states-in-roms: false ( bool )  # overrides states variable
+  screenshots: ./screenshots ( null, string )
+  image:
+    - height: null, number
+      width:  null, number
+      formats: list[string] #TBD 
+  video:
+    - height: null, number
+      width:  null, number
+      formats: list[string] #TBD
   systems:
     - {{ $system_id }}:
-          name: string      # main name
-          name_us: null, string   # additional names
-          name_jp: null, string   # additional names
-          name_eu: null, string   # additional names
+          name: string                  # main name
+          name_us: null, string         # additional names
+          name_jp: null, string         # additional names
+          name_eu: null, string         # additional names
           manufacturer: null, string
           release_jp: null, date
           release_eu: null, date
