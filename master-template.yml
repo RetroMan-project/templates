@@ -36,6 +36,8 @@ master-template:
           release_uk: null, date
           release_br: null, date
           status: supported ( available )
+          bios: map{(string,string)} # example:{(bios1,hash1),(bios2,hash2)}
+          opt_bios: map{(string,string)} # example:{(bios1,hash1),(bios2,hash2)}
           emulators:
             - {{ $emulator1 }}:
                 default: true ( bool )
@@ -43,5 +45,7 @@ master-template:
                 states: {{ $states }} ( string )
                 system_folders: list[string]
                 extensions: list[string]
+                bios: map{(string,string)} # those are merged with the sytem bioses
+                opt_bios: map{(string,string)} # those are merged with the sytem bioses
             - {{ $emulator2 }}:
                 default: false ( bool )
