@@ -1,0 +1,31 @@
+# NOT FINISHED
+# List from here: https://www.ezflashomega.com/news/5/EZ-Flash-Omega-Emulators.html?fullSite=1
+
+ezflash-omega-de:
+  name: Omega Definitive Edition
+  template_version: 0.1
+  brand: EZ Flash
+  roms_path: .
+  #saves: .
+  #states: ./states ( string )
+  #saves-in-roms: false ( bool )   # overrides saves variable
+  #states-in-roms: false ( bool )  # overrides states variable
+  #screenshots:
+  #image:
+  systems:
+    - gba
+    - nes
+    - snes
+    - megadrive
+    - mastersystem
+    - pce
+    - gbc
+    - gb
+    - ngp
+    - ngpc
+    - wswan
+    - arcade
+    - msx
+    - x1turbo
+    - bbcmicro
+    - agi
