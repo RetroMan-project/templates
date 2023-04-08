@@ -6,7 +6,7 @@ ezflash-omega-de:
   template_version: 0.1
   brand: EZ Flash
   roms_path: .
-  #saves: .
+  saves: SAVER
   #states: ./states ( string )
   #saves-in-roms: false ( bool )   # overrides saves variable
   #states-in-roms: false ( bool )  # overrides states variable
