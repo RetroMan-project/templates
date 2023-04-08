@@ -8,44 +8,46 @@ master-template:
   template_version: string
   brand: null, string
   roms_path: ./roms ( string )
-  gamelist_file: gamelist.xml ( string )
+  gamelist_file: gamelist.xml ( string )            # filename of the gamelist file, null= no gameslist file
   gamelist_location: {{ $roms_path }} ( string )
   saves: ./saves ( string )
   states: ./states ( string )
-  saves-in-roms: false ( bool )   # overrides saves variable
-  states-in-roms: false ( bool )  # overrides states variable
+  saves-in-roms: false ( bool )                     # are saves file in the same location as the rom file? overrides saves variable
+  states-in-roms: false ( bool )                    # are states file in the same location as the rom file? overrides states variable
   screenshots: ./screenshots ( null, string )
-  image:
+  image:                                            # if image/video is not set it's false by default and no scraped media is moved
     - height: null, number
       width:  null, number
-      formats: list[string] #TBD 
+      formats: list[string] #TBD
   video:
     - height: null, number
       width:  null, number
       formats: list[string] #TBD
   systems:
-    - {{ $system_id }}:
-          name: string                  # main name
-          name_us: null, string         # additional names
-          name_jp: null, string         # additional names
-          name_eu: null, string         # additional names
+    - {{ $system_id }}:                             # if nothing except this is delcared, it will be inherited from library
+          name: string                              # main name
+          name_us: null, string                     # additional names
+          name_jp: null, string                     # additional names
+          name_eu: null, string                     # additional names
           manufacturer: null, string
           release_jp: null, date
           release_eu: null, date
           release_us: null, date
           release_uk: null, date
           release_br: null, date
-          status: supported ( available )
-          bios: map{(string,string)} # example:{(bios1,hash1),(bios2,hash2)}
-          opt_bios: map{(string,string)} # example:{(bios1,hash1),(bios2,hash2)}
+          status: supported ( available )           # supported = the system is playable, avaliable = system is not performing good
+          bios: map{(string,string)}                # needed bios files, example:{(bios1,hash1),(bios2,hash2)}
+          opt_bios: map{(string,string)}            # optional bios files, example:{(bios1,hash1),(bios2,hash2)}
+          extensions: list ( string )
+          system_folders: list ( string )           # possible system folders name to search into, in case of device template only one must be specified
           emulators:
             - {{ $emulator1 }}:
                 default: true ( bool )
-                saves: {{ $saves }} ( string )
-                states: {{ $states }} ( string )
-                system_folders: list[string]
-                extensions: list[string]
-                bios: map{(string,string)} # those are merged with the sytem bioses
-                opt_bios: map{(string,string)} # those are merged with the sytem bioses
+                saves: {{ $system.saves }} ( string )                       # possibility to override saves location for a single emulator
+                states: {{ $system.states }} ( string )                     # possibility to override states location for a single emulator
+                system_folders: {{ $system.system_folders }} list[string]   # possibility to override the roms folder for a single emulator
+                extensions: {{ $system.extensions }} list[string]           # possibility to override supported extensions for a single emulator
+                bios: {{ $system.bios }} map{(string,string)}               # additional bioses that the emulator may need. Those are merged with the sytem bioses
+                opt_bios: {{ $systems.opt_bios }} map{(string,string)}      # additional bioses that the emulator may optionaly have. Those are merged with the sytem bioses
             - {{ $emulator2 }}:
                 default: false ( bool )
