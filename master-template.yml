@@ -1,6 +1,6 @@
 # Master template file, use it just for reference
 # the set option is the default one, the bracked options are allowed values
-# value: default (value1, vale2, null, integer, string)
+# value: default (value1, value2, null, integer, string)
 # where null is not specified means the value is mandatory unless a default value is set
 
 master-template:
