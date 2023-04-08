@@ -10,9 +10,9 @@ ezflash-omega-de:
   states: RTS
   systems:
     - gba:
-      bios: null
-      system_folders: {{ $roms_path }}
-      extensions: gba
+        bios: null
+        system_folders: {{ $roms_path }}
+        extensions: gba
     - nes
     - snes
     - megadrive
