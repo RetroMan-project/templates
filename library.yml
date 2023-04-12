@@ -1,15 +1,15 @@
 library:
   id: library
   name: Library
-  template_version: 1.0
-
+  template_version: 1.1
+  gamelist_file: null
   systems:
     
     - 32x:
-          name: Mega Drive 32X
-          manufacturer: SEGA
-          system_folders:
-              - 32x
+        name: Mega Drive 32X
+        manufacturer: SEGA
+        system_folders:
+            - 32x
 
     - mame:
         name: MAME
@@ -52,8 +52,8 @@ library:
             - 7z
 
     - naomi:
-        name: Sega Naomi
-        manufacturer: Sega
+        name: SEGA Naomi
+        manufacturer: SEGA
         system_folders:
             - naomi
         extensions:
@@ -137,7 +137,7 @@ library:
             - 7z
 
     - ws:
-        name: Bandai Wonderswan
+        name: Wonderswan
         manufacturer: Bandai
         system_folders:
             - wonderswan
@@ -148,7 +148,7 @@ library:
             - 7z
 
     - wsc:
-        name: Bandai Wonderswan Color
+        name: Wonderswan Color
         manufacturer: Bandai
         system_folders:
             - wonderswancolor
@@ -159,7 +159,7 @@ library:
             - 7z
 
     - pv1000:
-        name: Casio PV-1000
+        name: PV-1000
         manufacturer: Casio
         system_folders:
             - pv1000
@@ -169,7 +169,7 @@ library:
             - 7z
 
     - coleco:
-        name: Coleco ColecoVision
+        name: ColecoVision
         manufacturer: Coleco
         system_folders:
             - coleco
@@ -182,7 +182,7 @@ library:
             - 7z
 
     - amigacd32:
-        name: Commodore Amiga CD32
+        name: Amiga CD32
         manufacturer: Commodore
         system_folders:
             - amigacd32
@@ -193,7 +193,7 @@ library:
             - lha
 
     - advision:
-        name: Entex Adventure Vision
+        name: Adventure Vision
         manufacturer: Entex
         system_folders:
             - advision
@@ -203,7 +203,7 @@ library:
             - 7z
 
     - gpc:
-        name: Epoch Game Pocket Computer
+        name: Game Pocket Computer
         manufacturer: Epoch
         system_folders:
             - gamepocketcomputer
@@ -214,7 +214,7 @@ library:
             - 7z
 
     - channelf:
-        name: Fairchild Channel F
+        name: Channel F
         manufacturer: Fairchild
         system_folders:
             - channelf
@@ -225,7 +225,7 @@ library:
             - 7z
 
     - gamemaster:
-        name: Hartung Game Master
+        name: Game Master
         manufacturer: Hartung
         system_folders:
             - gamemaster
@@ -235,7 +235,7 @@ library:
             - 7z
 
     - odyssey:
-        name: Magnavox Odyssey²
+        name: Odyssey²
         manufacturer: Magnavox
         system_folders:
             - odyssey
@@ -245,7 +245,7 @@ library:
             - 7z
 
     - intellivision:
-        name: Mattel Intellivision
+        name: Intellivision
         manufacturer: Mattel
         system_folders:
             - intellivision
@@ -257,7 +257,7 @@ library:
             - 7z
 
     - vectrex:
-        name: Milton Bradley Vectrex
+        name: Vectrex
         manufacturer: Milton Bradley
         system_folders:
             - vectrex
@@ -269,7 +269,8 @@ library:
             - 7z
 
     - pcengine:
-        name: NEC PC Engine
+        name: PC Engine
+        name_alt: {(us,TurboGrafx 16)}
         manufacturer: NEC
         system_folders:
             - pcengine
@@ -280,7 +281,7 @@ library:
             - 7z
 
     - pcenginecd:
-        name: NEC PC Engine CD
+        name: PC Engine CD
         manufacturer: NEC
         system_folders:
             - pcenginecd
@@ -292,7 +293,7 @@ library:
             - m3u
 
     - pcfx:
-        name: NEC PC-FX
+        name: PC-FX
         manufacturer: NEC
         system_folders:
             - pcfx
@@ -303,7 +304,7 @@ library:
             - toc
 
     - sgfx:
-        name: NEC SuperGrafx
+        name: SuperGrafx
         manufacturer: NEC
         system_folders:
             - sgfx
@@ -316,19 +317,8 @@ library:
             - zip
             - 7z
 
-    - tg16:
-        name: NEC TurboGrafx 16
-        manufacturer: NEC
-        system_folders:
-            - tg16
-        extensions:
-            - pce
-            - bin
-            - zip
-            - 7z
-
     - tg16cd:
-        name: NEC TurboGrafx CD
+        name: TurboGrafx CD
         manufacturer: NEC
         system_folders:
             - tg16cd
@@ -340,7 +330,7 @@ library:
             - m3u
 
     - famicom:
-        name: Nintendo Famicom
+        name: Famicom
         manufacturer: Nintendo
         system_folders:
             - famicom
@@ -353,7 +343,7 @@ library:
             - 7z
 
     - fmtowns:
-        name: Fujitsu FM-TOWNS
+        name: FM-TOWNS
         manufacturer: Fujitsu
         system_folders:
             - fmtowns
@@ -365,7 +355,7 @@ library:
             - 7z
 
     - gamate:
-        name: Bit Corp Gamate
+        name: Gamate
         manufacturer: Bit Corp
         system_folders:
             - gamate
@@ -375,7 +365,7 @@ library:
             - 7z
 
     - gb:
-        name: Nintendo Game Boy
+        name: Game Boy
         manufacturer: Nintendo
         system_folders:
             - gameboy
@@ -388,7 +378,7 @@ library:
             - 7z
 
     - gbc:
-        name: Nintendo Game Boy Color
+        name: Game Boy Color
         manufacturer: Nintendo
         system_folders:
             - gameboycolor
@@ -399,8 +389,8 @@ library:
             - 7z
 
     - gg:
-        name: Sega Game Gear
-        manufacturer: Sega
+        name: Game Gear
+        manufacturer: SEGA
         system_folders:
             - gamegear
             - gg
@@ -410,7 +400,7 @@ library:
             - 7z
 
     - gba:
-        name: Nintendo Game Boy Advance
+        name: Game Boy Advance
         manufacturer: Nintendo
         system_folders:
             - gba
@@ -420,50 +410,8 @@ library:
             - zip
             - 7z
 
-    - gbc:
-        name: Nintendo Game Boy Color
-        manufacturer: Nintendo
-        system_folders:
-            - gbc
-        extensions:
-            - gbc
-            - zip
-            - 7z
-
-    - gb:
-        name: Nintendo Game Boy
-        manufacturer: Nintendo
-        system_folders:
-            - gb
-        extensions:
-            - gb
-            - gbc
-            - cgb
-            - sgb
-            - zip
-            - 7z
-
-    - gcevader:
-        name: General Consumer Electronics Vectrex
-        manufacturer: General Consumer Electronics
-        system_folders:
-            - gcevader
-        extensions:
-            - bin
-            - zip
-            - 7z
-
-    - intellivision:
-        name: Mattel Intellivision
-        manufacturer: Mattel
-        system_folders:
-            - intellivision
-        extensions:
-            - zip
-            - 7z
-
     - jaguarcd:
-        name: Atari Jaguar CD
+        name: Jaguar CD
         manufacturer: Atari
         system_folders:
             - jaguarcd
@@ -474,13 +422,15 @@ library:
 
     - megadrive:
         name: Megadrive
-        manifacturer: Sega
+        manifacturer: SEGA
         name_us: Genesis
-        release_jp: 29-10-1988
-        release_eu: 01-11-1990
-        release_us: 14-07-1989
-        release_uk: 14-08-1990
-        release_br: 01-12-1990
+        release: {
+            (jp,29-10-1988),
+            (eu,01-11-1990),
+            (us,14-07-1989),
+            (uk,14-08-1990),
+            (br,01-12-1990)
+            }
         system_folders:
           - megadrive
           - genesis
@@ -495,10 +445,31 @@ library:
           - zip
           - 7z
     
-    # TODO: mastersystem
+    - mastersystem:
+        name: Master System
+        manifacturer: SEGA
+        name_alt: Mark III
+        release: {
+            (jp,18-10-1987),
+            (fr,01-09-1987),
+            (us,01-10-1986),
+            (uk,01-08-1987),
+            (br,01-12-1990),
+            (au,01-01-1986),
+            (de,01-10-1986),
+            (it,01-11-1986),
+            (kr,01-04-1989)
+            }
+        system_folders:
+          - mastersystem
+          - ms
+        extensions:
+          - sms
+          - zip
+          - 7z
 
     - msx:
-        name: Microsoft MSX
+        name: MSX
         manufacturer: Microsoft
         system_folders:
             - msx
@@ -507,9 +478,21 @@ library:
             - dsk
             - zip
             - 7z
+    
+    - xbox:
+        name: Xbox
+        manufacturer: Microsoft
+        system_folders:
+            - xbox
+
+    - xbox360:
+        name: Xbox 360
+        manufacturer: Microsoft
+        system_folders:
+            - xbox360
 
     - n64:
-        name: Nintendo Nintendo 64
+        name: Nintendo 64
         manufacturer: Nintendo
         system_folders:
             - n64
@@ -519,9 +502,58 @@ library:
             - v64
             - zip
             - 7z
+    
+    - gc:
+        name: Game Cube
+        manufacturer: Nintendo
+        system_folders:
+            - gc
+        extensions:
+            - rvz
+
+    - wiiu:
+        name: Nintendo Wii U
+        manufacturer: Nintendo
+        dlc: true
+        patches: true
+        system_folders:
+            - wiiu
+        extensions:
+            - wua
+
+    - wii:
+        name: Nintendo Wii
+        manufacturer: Nintendo
+        dlc: true
+        patches: true
+        system_folders:
+            - wii
+        extensions:
+            - rvz
+            - wad
+
+    - nds:
+        name: Nintendo DS
+        manufacturer: Nintendo
+        system_folders:
+            - nds
+        extensions:
+            - nds
+            - wad
+
+    - n3ds:
+        name: Nintendo 3DS
+        manufacturer: Nintendo
+        dlc: true
+        patches: true
+        system_folders:
+            - n3ds
+        extensions:
+            - 3ds
+            - cia
 
     - neogeo:
-        name: SNK Neo Geo
+        name: Neo Geo
         manufacturer: SNK
         system_folders:
             - neogeo
@@ -531,7 +563,7 @@ library:
             - 7z
 
     - ngp:
-        name: SNK Neo Geo Pocket
+        name: Neo Geo Pocket
         manufacturer: SNK
         system_folders:
             - ngp
@@ -542,7 +574,7 @@ library:
             - 7z
 
     - ngpc:
-        name: SNK Neo Geo Pocket Color
+        name: Neo Geo Pocket Color
         manufacturer: SNK
         system_folders:
             - ngpc
@@ -551,41 +583,9 @@ library:
             - zip
             - 7z
 
-    - pcengine:
-        name: NEC PC Engine
-        manufacturer: NEC
-        system_folders:
-            - pcengine
-            - pce
-        extensions:
-            - pce
-            - zip
-            - 7z
-
-    - pcfx:
-        name: NEC PC-FX
-        manufacturer: NEC
-        system_folders:
-            - pcfx
-        extensions:
-            - iso
-            - cue
-            - zip
-            - 7z
-
-    - pv1000:
-        name: Casio PV-1000
-        manufacturer: Casio
-        system_folders:
-            - pv1000
-        extensions:
-            - bin
-            - zip
-            - 7z
-
     - sg1000:
-        name: Sega SG-1000
-        manufacturer: Sega
+        name: SG-1000
+        manufacturer: SEGA
         system_folders:
             - sg1000
         extensions:
@@ -603,16 +603,6 @@ library:
             - zip
             - 7z
 
-    - supergrafx:
-        name: NEC SuperGrafx
-        manufacturer: NEC
-        system_folders:
-            - supergrafx
-        extensions:
-            - pce
-            - zip
-            - 7z
-
     - vb:
         name: Nintendo Virtual Boy
         manufacturer: Nintendo
@@ -624,18 +614,8 @@ library:
             - zip
             - 7z
 
-    - vectrex:
-        name: General Consumer Electronics Vectrex
-        manufacturer: General Consumer Electronics
-        system_folders:
-            - vectrex
-        extensions:
-            - bin
-            - zip
-            - 7z
-
     - zxspectrum:
-        name: Sinclair ZX Spectrum
+        name: ZX Spectrum
         manufacturer: Sinclair
         system_folders:
             - zxspectrum

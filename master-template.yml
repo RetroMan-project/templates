@@ -26,20 +26,16 @@ master-template:
   systems:
     - {{ $system_id }}:                             # if nothing except this is delcared, it will be inherited from library
           name: string                              # main name
-          name_us: null, string                     # additional names
-          name_jp: null, string                     # additional names
-          name_eu: null, string                     # additional names
+          name_alt: map{(string,string)}            # additional names, example: {("us","Genesis"),("jp","メガドライブ")}
           manufacturer: null, string
-          release_jp: null, date
-          release_eu: null, date
-          release_us: null, date
-          release_uk: null, date
-          release_br: null, date
+          release: map{(string,string)}             # release dates, example: {("us","01-01-1988"),("jp","01-04-1987")}, date format is dd-mm-yyyy 
           status: supported ( available )           # supported = the system is playable, avaliable = system is not performing good
           bios: map{(string,string)}                # needed bios files, example:{(bios1,hash1),(bios2,hash2)}
           opt_bios: map{(string,string)}            # optional bios files, example:{(bios1,hash1),(bios2,hash2)}
           extensions: list ( string )
           system_folders: list ( string )           # possible system folders name to search into, in case of device template only one must be specified
+          dlc: false ( bool )                       # this system officially supports DLC
+          patches: false ( bool )                   # this system officially supports patches
           emulators:
             - {{ $emulator1 }}:
                 default: true ( bool )
