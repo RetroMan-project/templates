@@ -1,7 +1,7 @@
 library:
   id: library
   name: Library
-  template_version: 1.1
+  template_version: 1.2
   gamelist_file: null
   systems:
     
@@ -127,7 +127,7 @@ library:
             - 7z
 
     - sufami:
-        name: Bandai SuFami Turbo
+        name: SuFami Turbo
         manufacturer: Bandai
         system_folders:
             - sufami
@@ -274,6 +274,8 @@ library:
         manufacturer: NEC
         system_folders:
             - pcengine
+            - pce
+            - turbografx16
         extensions:
             - pce
             - bin
@@ -282,15 +284,36 @@ library:
 
     - pcenginecd:
         name: PC Engine CD
+        name_alt: {(us,TurboGrafx-CD)}
         manufacturer: NEC
         system_folders:
             - pcenginecd
+            - pcecd
         extensions:
             - cue
             - ccd
             - chd
-            - toc
+            - bin
             - m3u
+            - pce
+            - iso
+            - img
+
+    - supergrafx:
+        name: PC Engine SuperGrafx
+        manufacturer: NEC
+        system_folders:
+            - sgfx
+            - supergrafx
+            - pcesgfx
+        extensions:
+            - pce
+            - sgx
+            - cue
+            - ccd
+            - chd
+            - zip
+            - 7z
 
     - pcfx:
         name: PC-FX
@@ -302,45 +325,6 @@ library:
             - cue
             - ccd
             - toc
-
-    - sgfx:
-        name: SuperGrafx
-        manufacturer: NEC
-        system_folders:
-            - sgfx
-        extensions:
-            - pce
-            - sgx
-            - cue
-            - ccd
-            - chd
-            - zip
-            - 7z
-
-    - tg16cd:
-        name: TurboGrafx CD
-        manufacturer: NEC
-        system_folders:
-            - tg16cd
-        extensions:
-            - cue
-            - ccd
-            - chd
-            - toc
-            - m3u
-
-    - famicom:
-        name: Famicom
-        manufacturer: Nintendo
-        system_folders:
-            - famicom
-            - fc
-        extensions:
-            - nes
-            - unif
-            - unf
-            - zip
-            - 7z
 
     - fmtowns:
         name: FM-TOWNS
@@ -388,17 +372,6 @@ library:
             - zip
             - 7z
 
-    - gg:
-        name: Game Gear
-        manufacturer: SEGA
-        system_folders:
-            - gamegear
-            - gg
-        extensions:
-            - gg
-            - zip
-            - 7z
-
     - gba:
         name: Game Boy Advance
         manufacturer: Nintendo
@@ -410,6 +383,143 @@ library:
             - zip
             - 7z
 
+    - nds:
+        name: Nintendo DS
+        manufacturer: Nintendo
+        system_folders:
+            - nds
+        extensions:
+            - nds
+            - wad
+
+    - n3ds:
+        name: Nintendo 3DS
+        manufacturer: Nintendo
+        dlc: true
+        patches: true
+        system_folders:
+            - n3ds
+        extensions:
+            - 3ds
+            - cia
+
+    - famicom:
+        name: Famicom
+        manufacturer: Nintendo
+        system_folders:
+            - famicom
+            - fc
+        extensions:
+            - nes
+            - unif
+            - unf
+            - zip
+            - 7z
+
+    - nes:
+        name: Nintendo Entertainment System
+        manufacturer: Nintendo
+        system_folders:
+            - nes
+        extensions:
+            - nes
+            - zip
+            - 7z
+
+    - sfc:
+        name: Super Famicom
+        manufacturer: Nintendo
+        system_folders:
+            - sfc
+        extensions:
+            - sfc
+            - zip
+            - 7z
+
+    - fds:
+        name: Super Famicom Disk System
+        manufacturer: Nintendo
+        system_folders:
+            - fds
+        extensions:
+            - fds
+            - zip
+            - 7z
+
+    - snes:
+        name: Super Nintendo Entertainment System
+        manufacturer: Nintendo
+        system_folders:
+            - snes
+        extensions:
+            - sfc
+            - zip
+            - 7z
+
+    - vb:
+        name: Virtual Boy
+        manufacturer: Nintendo
+        system_folders:
+            - vb
+            - virtualboy
+        extensions:
+            - vb
+            - zip
+            - 7z
+
+    - n64:
+        name: Nintendo 64
+        manufacturer: Nintendo
+        system_folders:
+            - n64
+        extensions:
+            - n64
+            - z64
+            - v64
+            - zip
+            - 7z
+
+    - gc:
+        name: Game Cube
+        manufacturer: Nintendo
+        system_folders:
+            - gc
+        extensions:
+            - rvz
+
+    - wii:
+        name: Nintendo Wii
+        manufacturer: Nintendo
+        dlc: true
+        patches: true
+        system_folders:
+            - wii
+        extensions:
+            - rvz
+            - wad
+
+    - wiiu:
+        name: Nintendo Wii U
+        manufacturer: Nintendo
+        dlc: true
+        patches: true
+        system_folders:
+            - wiiu
+        extensions:
+            - wua
+
+    
+    - switch:
+        name: Switch
+        manufacturer: Nintendo
+        dlc: true
+        patches: true
+        system_folders:
+            - switch
+        extensions:
+            - xci
+            - nsp
+
     - jaguarcd:
         name: Jaguar CD
         manufacturer: Atari
@@ -419,6 +529,29 @@ library:
             - iso
             - cue
             - chd
+   
+    - mastersystem:
+        name: Master System
+        manifacturer: SEGA
+        name_alt: Mark III
+        release: {
+            (jp,18-10-1987),
+            (fr,01-09-1987),
+            (us,01-10-1986),
+            (uk,01-08-1987),
+            (br,01-12-1990),
+            (au,01-01-1986),
+            (de,01-10-1986),
+            (it,01-11-1986),
+            (kr,01-04-1989)
+            }
+        system_folders:
+          - mastersystem
+          - ms
+        extensions:
+          - sms
+          - zip
+          - 7z
 
     - megadrive:
         name: Megadrive
@@ -444,29 +577,66 @@ library:
           - bin
           - zip
           - 7z
-    
-    - mastersystem:
-        name: Master System
+
+    - megadrivejp:
+        name: Megadrive (Japan)
         manifacturer: SEGA
-        name_alt: Mark III
-        release: {
-            (jp,18-10-1987),
-            (fr,01-09-1987),
-            (us,01-10-1986),
-            (uk,01-08-1987),
-            (br,01-12-1990),
-            (au,01-01-1986),
-            (de,01-10-1986),
-            (it,01-11-1986),
-            (kr,01-04-1989)
-            }
+        name_us: Genesis
+        release: {(jp,29-10-1988)}
         system_folders:
-          - mastersystem
-          - ms
+          - megadrivejp
         extensions:
-          - sms
+          - 68k
+          - mdx
+          - md
+          - sgd
+          - smd
+          - gen
+          - bin
           - zip
           - 7z
+    
+    - dreamcast:
+        name: Dreamcast
+        manifacturer: SEGA
+        system_folders:
+            - dreamcast
+            - dc
+        extensions:
+            - cdi
+            - gdi
+            - chd
+            - cue
+            - bin
+            - elf
+            - zip
+            - 7z
+            - lst
+            - dat
+            - m3u
+
+    - saturn:
+        name: Saturn
+        manifacturer: SEGA
+        system_folders:
+            - saturn
+        extensions:
+            - cue
+            - toc
+            - m3u
+            - ccd
+            - chd
+
+    - gg:
+        name: Game Gear
+        manufacturer: SEGA
+        system_folders:
+            - gamegear
+            - gg
+        extensions:
+            - gg
+            - zip
+            - 7z
 
     - msx:
         name: MSX
@@ -484,73 +654,19 @@ library:
         manufacturer: Microsoft
         system_folders:
             - xbox
+        extensions:
+            - xiso.iso
+            - iso
+            - xiso
 
     - xbox360:
         name: Xbox 360
         manufacturer: Microsoft
         system_folders:
             - xbox360
+        extensions:
+            - xex
 
-    - n64:
-        name: Nintendo 64
-        manufacturer: Nintendo
-        system_folders:
-            - n64
-        extensions:
-            - n64
-            - z64
-            - v64
-            - zip
-            - 7z
-    
-    - gc:
-        name: Game Cube
-        manufacturer: Nintendo
-        system_folders:
-            - gc
-        extensions:
-            - rvz
-
-    - wiiu:
-        name: Nintendo Wii U
-        manufacturer: Nintendo
-        dlc: true
-        patches: true
-        system_folders:
-            - wiiu
-        extensions:
-            - wua
-
-    - wii:
-        name: Nintendo Wii
-        manufacturer: Nintendo
-        dlc: true
-        patches: true
-        system_folders:
-            - wii
-        extensions:
-            - rvz
-            - wad
-
-    - nds:
-        name: Nintendo DS
-        manufacturer: Nintendo
-        system_folders:
-            - nds
-        extensions:
-            - nds
-            - wad
-
-    - n3ds:
-        name: Nintendo 3DS
-        manufacturer: Nintendo
-        dlc: true
-        patches: true
-        system_folders:
-            - n3ds
-        extensions:
-            - 3ds
-            - cia
 
     - neogeo:
         name: Neo Geo
@@ -590,27 +706,6 @@ library:
             - sg1000
         extensions:
             - sg
-            - zip
-            - 7z
-
-    - snes:
-        name: Super Nintendo Entertainment System
-        manufacturer: Nintendo
-        system_folders:
-            - snes
-        extensions:
-            - sfc
-            - zip
-            - 7z
-
-    - vb:
-        name: Nintendo Virtual Boy
-        manufacturer: Nintendo
-        system_folders:
-            - vb
-            - virtualboy
-        extensions:
-            - vb
             - zip
             - 7z
 
