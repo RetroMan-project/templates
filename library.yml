@@ -372,6 +372,14 @@ library:
             - zip
             - 7z
 
+    - pokemini:
+        name: Pokemon Mini
+        manufacturer: Nintendo
+        system_folders:
+            - pokemini
+        extensions:
+            - min
+
     - gba:
         name: Game Boy Advance
         manufacturer: Nintendo
