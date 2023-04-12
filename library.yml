@@ -625,3 +625,56 @@ library:
             - zx
             - zip
             - 7z
+
+    - psx:
+        name: PlayStation
+        manufacturer: Sony
+        system_folders:
+            - psx
+            - ps
+            - m3u
+        extensions:
+            - chd
+            - bin
+            - iso
+            - zip
+            - 7z
+
+    - ps2:
+        name: PlayStation 2
+        manufacturer: Sony
+        system_folders:
+            - ps2
+        extensions:
+            - chd
+            - bin
+            - iso
+            - zip
+            - 7z
+
+    - ps3:
+        name: PlayStation 3
+        manufacturer: Sony
+        system_folders:
+            - ps3
+        extensions:
+            - sfb
+            - pkg
+
+    - psp:
+        name: PlayStation Portable
+        manufacturer: Sony
+        system_folders:
+            - psp
+        extensions:
+            - iso
+            - cso
+
+    - psvita:
+        name: PS Vita
+        manufacturer: Sony
+        system_folders:
+            - psvita
+        extensions:
+            - pkg
+
