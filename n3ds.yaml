@@ -1,28 +1,49 @@
 # Nintendo 3DS
 n3ds:
   name: 3DS
-  template_version: 1.0
+  template_version: 1.1
   brand: Nintendo
-  saves-in-roms: true   # TODO: saves are inside roms folder
-  states-in-roms: true   # TODO: states are inside roms folder
+  saves-in-roms: true
+  states-in-roms: true
   roms_path: roms
   systems:
-    - a26
-    - a52
-    - a78
-    - col
-    - cpc
-    - dsiware
-    - gb
-    - gba
-    - gen
-    - gg
-    - m5
-    - nds
-    - nes
-    - ngp
-    - sg
-    - sms
-    - snes
-    - tg16
-    - ws
+    - atari2600:
+      system_folders: a26
+    - atari5200:
+      system_folders: a52
+    - atari7800:
+      system_folders: a78
+    - coleco:
+      system_folders: col
+    - cpc:
+      system_folders: cpc
+    #- dsiware
+    - gb:
+      system_folders: gb
+    - gba:
+      system_folders: gba
+    - megadrive:
+      system_folders: gen
+    - gg:
+      system folders: gg
+    #- m5
+    - nds:
+      system folders: nds
+    - nes:
+      system folders: nes
+    - ngp:
+      system folders: ngp
+    - ngpc:
+      system folders: ngpc
+    - sg1000:
+      system folders: sg
+    - sms:
+      system folders: sms
+    - snes:
+      system folders: snes
+    - pcengine:
+      system folders: tg16
+    - ws:
+      system folders: ws
+    - wsc:
+      system folders: wsc

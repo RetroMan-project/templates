@@ -46,6 +46,22 @@ library:
             - zip
             - 7z
 
+    - cpc:
+        name: Color Personal Computer (CPC)
+        manufacturer: Amstrad
+        system_folders:
+            - amstradcpc
+            - cpc
+        extensions:
+            - dsk
+            - sna
+            - tap
+            - cdt
+            - voc
+            - m3u
+            - zip
+            - 7z
+
     - naomi:
         name: SEGA Naomi
         manufacturer: SEGA
