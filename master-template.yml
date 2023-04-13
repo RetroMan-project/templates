@@ -61,6 +61,7 @@ master-template:
           system_folders: list ( string )           # possible system folders name to search into, in case of device template only one must be specified
           dlc: false ( bool )                       # this system officially supports DLC
           patches: false ( bool )                   # this system officially supports patches
+          merged: list(string)                      # Merges two or more systems in one, some handhelds are merging systems like wonderswan and wonderswan color in a single sytem
           emulators:
             - {{ $emulator1 }}:
                 default: true ( bool )

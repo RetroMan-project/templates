@@ -17,8 +17,9 @@ miyoominiv3-onion:
         system_folders: ARCADE
     - dos:
         system_folders: DOS
-    - famicom:
+    - nes:
         system_folders: FC
+        merged: famicom
     - fds:
         system_folders: FDS
     - gb:
@@ -37,11 +38,12 @@ miyoominiv3-onion:
         system_folders: MS
     - neogeo:
         system_folders: NEOGEO
-    - ngp:
+    - ngpc:
         system_folders: NGP
+        merged: ngp
     - pce:
         system_folders: PCE
-    - pico:
+    - pico8:
         system_folders: PICO
     - pokemini:
         system_folders: POKE
@@ -53,10 +55,12 @@ miyoominiv3-onion:
         system_folders: SEGACD
     - snes:
         system_folders: SFC
+        merged: sfc
     - sgb:
         system_folders: SGB
     - virtualboy:
         system_folders: VB
     - wsc:
         system_folders: WS
+        merged: ws
 

@@ -393,6 +393,17 @@ library:
             - zip
             - 7z
 
+    - sgb:
+        name: Super Game Boy
+        manufacturer: Nintendo
+        system_folders:
+            - sgb
+        extensions:
+            - gb
+            - gbc
+            - zip
+            - 7z
+
     - gbc:
         name: Game Boy Color
         manufacturer: Nintendo
@@ -833,10 +844,23 @@ library:
         extensions:
             - pkg
 
-    - pico #TODO
+    - pico8:
+        name: PICO-8
+        manufacturer: Lexaloffle
+        system_folders:
+            - pico8
+            - pico-8
+        extensions:
+            - p8
+            - png
+            - m3u
 
-    - tic #TODO
-
-    - sgb: #TODO
-        name: Super Game Boy
+    - tic80:
+        name: TIC-80
+        manufacturer: nesbox
+        system_folders:
+            - tic80
+            - tic
+        extensions:
+            - tic
 
