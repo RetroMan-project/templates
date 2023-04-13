@@ -4,7 +4,7 @@
 library:
   id: library
   name: Library
-  template_version: 2.0
+  template_version: 3.0
   gamelist_file: null
   systems:
 
@@ -950,3 +950,16 @@ library:
         extensions:
             - tic
 
+    - uzebox:
+        name: Uzebox
+        system_folders:
+            - uzebox
+        extensions:
+            - uze
+    
+    - wasm4:
+        name: WASM4
+        system_folders:
+            - wasm4
+        extensions:
+            - wasm
