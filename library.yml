@@ -1,7 +1,7 @@
 library:
   id: library
   name: Library
-  template_version: 1.2
+  template_version: 1.3
   gamelist_file: null
   systems:
 
@@ -369,6 +369,17 @@ library:
             - zip
             - 7z
 
+    - gw:
+        name: Game and Watch
+        manufacturer: Nintendo
+        system_folders:
+            - gw
+            - gameandwatch
+        extensions:
+            - mgw
+            - zip
+            - 7z
+
     - gb:
         name: Game Boy
         manufacturer: Nintendo
@@ -579,6 +590,7 @@ library:
         system_folders:
           - mastersystem
           - ms
+          - sms
         extensions:
           - sms
           - zip
@@ -696,6 +708,16 @@ library:
             - dsk
             - zip
             - 7z
+
+    - dos:
+        name: MS-DOS
+        manufacturer: Microsoft
+        system_folders:
+            - dos
+            - msdos
+            - pc
+        extensions:
+            - dosz
     
     - xbox:
         name: Xbox
@@ -810,4 +832,11 @@ library:
             - psvita
         extensions:
             - pkg
+
+    - pico #TODO
+
+    - tic #TODO
+
+    - sgb: #TODO
+        name: Super Game Boy
 

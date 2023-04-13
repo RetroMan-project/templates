@@ -15,14 +15,39 @@ master-template:
   saves-in-roms: false ( bool )                     # are saves file in the same location as the rom file? overrides saves variable
   states-in-roms: false ( bool )                    # are states file in the same location as the rom file? overrides states variable
   screenshots: ./screenshots ( null, string )
-  image:                                            # if image/video is not set it's false by default and no scraped media is moved
-    - height: null, number
-      width:  null, number
-      formats: list[string] #TBD
-  video:
-    - height: null, number
-      width:  null, number
-      formats: list[string] #TBD
+  media:
+    - screenshot:                                            # if image/video is not set it's false by default and no scraped media is moved
+        path: {{$resources}}/screenshot
+        height: null, number                            # in px
+        width:  null, number                            # in px
+        formats: list[string] #TBD
+    - video:
+        path: {{$resources}}/video
+        height: null, number
+        width:  null, number
+        formats: list[string] #TBD
+    - manuals:
+        path: {{$resources}}/manuals ( null, string ) # {{$system.system_folders}}/manuals
+    - support:
+        path: {{$resources}}/support ( null, string ) # Where the cartdrige or disk image is saved
+        height: null, number
+        width:  null, number
+        formats: list[string] #TBD
+    - wheel:
+        path: {{$resources}}/wheel
+        height: null, number
+        width:  null, number
+        formats: list[string] #TBD
+    - logo:
+        path: {{$resources}}/logo
+        height: null, number
+        width:  null, number
+        formats: list[string] #TBD
+    - title:
+        path: {{$resources}}/title
+        height: null, number
+        width:  null, number
+        formats: list[string] #TBD
   systems:
     - {{ $system_id }}:                             # if nothing except this is delcared, it will be inherited from library
           name: string                              # main name

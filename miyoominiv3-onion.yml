@@ -1,23 +1,62 @@
 # Miyoo Mini v3 - OnionOS
 miyoominiv3-onion:
   name: Miyoo Mini
-  template_version: 0.1
+  template_version: 1.0
   brand: Ingenic
   gamelist_file: miyoogamelist.xml
   saves: Saves/CurrentProfile/saves
   states: Saves/CurrentProfile/states
-  roms_path: ROMs
+  roms_path: Roms
+  media:
+    - screenshot:
+      path: {{$system.system_folders}}/Imgs
+      formats: png
+      width: 250
   systems:
+    - mame:
+        system_folders: ARCADE
+    - dos:
+        system_folders: DOS
+    - famicom:
+        system_folders: FC
+    - fds:
+        system_folders: FDS
     - gb:
-        - status: "supported" # This is the default status, can be omitted
-        - emulators:
-          - gambatte:
-              default: true
-              saves: _savesdir_/Gambatte
-              states: _statesdir_/Gambatte
-    - gbc
-    - nes
-    - snes
-    - megadrive
-    - dreamcast:
-        - status: "available"
+        system_folders: GB
+    - gba:
+        system_folders: GBA
+    - gbc:
+        system_folders: GBC
+    - gg:
+        system_folders: GG
+    - gw:
+        system_folders: GW
+    - megadrive:
+        system_folders: MD
+    - mastersystem:
+        system_folders: MS
+    - neogeo:
+        system_folders: NEOGEO
+    - ngp:
+        system_folders: NGP
+    - pce:
+        system_folders: PCE
+    - pico:
+        system_folders: PICO
+    - pokemini:
+        system_folders: POKE
+    #- system:
+    #    system_folders: PORTS
+    - psx:
+        system_folders: PS
+    - segacd:
+        system_folders: SEGACD
+    - snes:
+        system_folders: SFC
+    - sgb:
+        system_folders: SGB
+    - virtualboy:
+        system_folders: VB
+    - wsc:
+        system_folders: WS
+
