@@ -1,3 +1,6 @@
+# Sticking to the Batocera standard
+# https://wiki.batocera.org/systems
+
 library:
   id: library
   name: Library
