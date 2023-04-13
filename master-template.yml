@@ -8,7 +8,7 @@ master-template:
   template_version: string
   brand: null, string
   roms_path: ./roms ( string )
-  gamelist_file: null ( string )            # usually gamelist.xml, filename of the gamelist file, null= no gameslist file
+  gamelist_file: null ( string )                    # usually gamelist.xml, filename of the gamelist file, null= no gameslist file
   gamelist_location: {{ $roms_path }} ( string )
   saves: ./saves ( string )
   states: ./states ( string )
@@ -16,10 +16,10 @@ master-template:
   states-in-roms: false ( bool )                    # are states file in the same location as the rom file? overrides states variable
   screenshots: ./screenshots ( null, string )
   media:
-    - screenshot:                                            # if image/video is not set it's false by default and no scraped media is moved
+    - screenshot:                                   # if image/video is not set it's false by default and no scraped media is moved
         path: {{$resources}}/screenshot
-        height: null, number                            # in px
-        width:  null, number                            # in px
+        height: null, number                        # in px
+        width:  null, number                        # in px
         formats: list[string] #TBD
     - video:
         path: {{$resources}}/video
@@ -27,9 +27,9 @@ master-template:
         width:  null, number
         formats: list[string] #TBD
     - manuals:
-        path: {{$resources}}/manuals ( null, string ) # {{$system.system_folders}}/manuals
+        path: {{$resources}}/manuals ( null, string )   # {{$system.system_folders}}/manuals
     - support:
-        path: {{$resources}}/support ( null, string ) # Where the cartdrige or disk image is saved
+        path: {{$resources}}/support ( null, string )   # Where the cartdrige or disk image is saved
         height: null, number
         width:  null, number
         formats: list[string] #TBD
