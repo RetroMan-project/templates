@@ -5,6 +5,11 @@ library:
   gamelist_file: null
   systems:
 
+    - arcade:
+        merged:
+            - mame
+            - fbneo
+
     - mame:
         name: MAME
         manufacturer: MAME

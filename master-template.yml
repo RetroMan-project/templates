@@ -8,7 +8,7 @@ master-template:
   template_version: string
   brand: null, string
   roms_path: ./roms ( string )
-  gamelist_file: gamelist.xml ( string )            # filename of the gamelist file, null= no gameslist file
+  gamelist_file: null ( string )            # usually gamelist.xml, filename of the gamelist file, null= no gameslist file
   gamelist_location: {{ $roms_path }} ( string )
   saves: ./saves ( string )
   states: ./states ( string )

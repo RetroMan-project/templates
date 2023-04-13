@@ -1,7 +1,6 @@
-# Miyoo Mini v3 - OnionOS
-miyoominiv3-onion:
-  name: Mega Everdrive X7
-  template_version: 0.1
+mega-everdrive:
+  name: Mega Everdrive
+  template_version: 1.0
   brand: Krizz
   gamelist_file: null
   saves-in-roms: true 
@@ -10,7 +9,7 @@ miyoominiv3-onion:
   systems:
     - megadrive:
         system_folders:
-          - _roms_path_
+          - {{$roms_path}}
         extensions:
           - md
           - smd
