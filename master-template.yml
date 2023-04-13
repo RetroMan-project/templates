@@ -20,34 +20,34 @@ master-template:
         path: {{$resources}}/screenshot
         height: null, number                        # in px
         width:  null, number                        # in px
-        formats: list[string] #TBD
+        formats: list[string]                       # extensions
     - video:
         path: {{$resources}}/video
         height: null, number
         width:  null, number
-        formats: list[string] #TBD
+        formats: list[string]
     - manuals:
         path: {{$resources}}/manuals ( null, string )   # {{$system.system_folders}}/manuals
     - support:
         path: {{$resources}}/support ( null, string )   # Where the cartdrige or disk image is saved
         height: null, number
         width:  null, number
-        formats: list[string] #TBD
+        formats: list[string]
     - wheel:
         path: {{$resources}}/wheel
         height: null, number
         width:  null, number
-        formats: list[string] #TBD
+        formats: list[string]
     - logo:
         path: {{$resources}}/logo
         height: null, number
         width:  null, number
-        formats: list[string] #TBD
+        formats: list[string]
     - title:
         path: {{$resources}}/title
         height: null, number
         width:  null, number
-        formats: list[string] #TBD
+        formats: list[string]
   systems:
     - {{ $system_id }}:                             # if nothing except this is delcared, it will be inherited from library
           name: string                              # main name
