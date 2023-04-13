@@ -1,7 +1,7 @@
 library:
   id: library
   name: Library
-  template_version: 1.3
+  template_version: 2.0
   gamelist_file: null
   systems:
 
@@ -29,7 +29,7 @@ library:
             - zip
             - 7z
 
-    - laserdisc:
+    - daphne:
         name: LaserDisc
         manufacturer: DAPHNE
         system_folders:
@@ -38,6 +38,73 @@ library:
         extensions:
             - daphne
             - squashfs
+
+    - model1:
+        name: Model 1
+        manufacturer: SEGA
+        release: 1992
+        system_folders:
+            - model1
+        extensions:
+            - zip
+            - 7z
+
+    - model2:
+        name: Model 2
+        manufacturer: SEGA
+        release: 1994
+        system_folders:
+            - model2
+        extensions:
+            - zip
+
+    - model3:
+        name: Model 3
+        manufacturer: SEGA
+        release: 1996
+        system_folders:
+            - model3
+        extensions:
+            - zip 
+
+    - naomi:
+        name: SEGA Naomi
+        manufacturer: SEGA
+        release: 1998
+        system_folders:
+            - naomi
+        extensions:
+            - lst
+            - bin
+            - dat
+            - zip
+            - 7z
+
+    - naomi2:
+        name: SEGA Naomi
+        manufacturer: SEGA
+        release: 2000
+        system_folders:
+            - naomi2
+        extensions:
+            - zip
+            - 7z
+
+    - triforce:
+        name: Triforce
+        manufacturer: Namco, Sega and Nintendo
+        release: 2002
+        system_folders:
+            - triforce
+        extensions:
+            - gcm
+            - iso
+            - gcz
+            - ciso
+            - wbfs
+            - elf
+            - dol
+            - m3u
 
     - atomiswave:
         name: Sammy Atomiswave
@@ -51,31 +118,14 @@ library:
             - zip
             - 7z
 
-    - cpc:
-        name: Color Personal Computer (CPC)
-        manufacturer: Amstrad
+    - channelf:
+        name: Channel F
+        manufacturer: Fairchild
         system_folders:
-            - amstradcpc
-            - cpc
+            - channelf
         extensions:
-            - dsk
-            - sna
-            - tap
-            - cdt
-            - voc
-            - m3u
-            - zip
-            - 7z
-
-    - naomi:
-        name: SEGA Naomi
-        manufacturer: SEGA
-        system_folders:
-            - naomi
-        extensions:
-            - lst
             - bin
-            - dat
+            - fc
             - zip
             - 7z
 
@@ -87,6 +137,51 @@ library:
         extensions:
             - a26
             - bin
+            - zip
+            - 7z
+
+    - odyssey:
+        name: Odyssey²
+        manufacturer: Magnavox
+        release: 1978
+        system_folders:
+            - odyssey
+        extensions:
+            - bin
+            - zip
+            - 7z
+
+    - astrocde:
+        name: Astrocade
+        manufacturer: Bally
+        release: 1978
+        system_folders:
+            - astrocde
+        extensions:
+            - bin
+            - zip
+            - 7z
+
+    - apfm1000:
+        name: APF-MP1000
+        manufacturer: APF Electronics
+        release: 1978
+        system_folders:
+            - apfm1000
+        extensions:
+            - bin
+            - zip
+            - 7z
+
+    - intellivision:
+        name: Intellivision
+        manufacturer: Mattel
+        system_folders:
+            - intellivision
+        extensions:
+            - int
+            - bin
+            - rom
             - zip
             - 7z
 
@@ -106,6 +201,57 @@ library:
             - bin
             - a52
             - xex
+            - zip
+            - 7z
+
+    - colecovision:
+        name: ColecoVision
+        manufacturer: Coleco
+        system_folders:
+            - coleco
+            - colecovision
+        extensions:
+            - bin
+            - col
+            - rom
+            - zip
+            - 7z
+
+    - advision:
+        name: Adventure Vision
+        manufacturer: Entex
+        system_folders:
+            - advision
+        extensions:
+            - bin
+            - zip
+            - 7z
+
+    - vectrex:
+        name: Vectrex
+        manufacturer: Milton Bradley
+        system_folders:
+            - vectrex
+        extensions:
+            - bin
+            - gam
+            - vec
+            - zip
+            - 7z
+
+    - cpc:
+        name: Color Personal Computer (CPC)
+        manufacturer: Amstrad
+        system_folders:
+            - amstradcpc
+            - cpc
+        extensions:
+            - dsk
+            - sna
+            - tap
+            - cdt
+            - voc
+            - m3u
             - zip
             - 7z
 
@@ -194,19 +340,6 @@ library:
             - zip
             - 7z
 
-    - coleco:
-        name: ColecoVision
-        manufacturer: Coleco
-        system_folders:
-            - coleco
-            - colecovision
-        extensions:
-            - bin
-            - col
-            - rom
-            - zip
-            - 7z
-
     - amigacd32:
         name: Amiga CD32
         manufacturer: Commodore
@@ -217,16 +350,6 @@ library:
             - cue
             - chd
             - lha
-
-    - advision:
-        name: Adventure Vision
-        manufacturer: Entex
-        system_folders:
-            - advision
-        extensions:
-            - bin
-            - zip
-            - 7z
 
     - gpc:
         name: Game Pocket Computer
@@ -239,17 +362,6 @@ library:
             - zip
             - 7z
 
-    - channelf:
-        name: Channel F
-        manufacturer: Fairchild
-        system_folders:
-            - channelf
-        extensions:
-            - bin
-            - fc
-            - zip
-            - 7z
-
     - gamemaster:
         name: Game Master
         manufacturer: Hartung
@@ -257,40 +369,6 @@ library:
             - gamemaster
         extensions:
             - bin
-            - zip
-            - 7z
-
-    - odyssey:
-        name: Odyssey²
-        manufacturer: Magnavox
-        system_folders:
-            - odyssey
-        extensions:
-            - bin
-            - zip
-            - 7z
-
-    - intellivision:
-        name: Intellivision
-        manufacturer: Mattel
-        system_folders:
-            - intellivision
-        extensions:
-            - int
-            - bin
-            - rom
-            - zip
-            - 7z
-
-    - vectrex:
-        name: Vectrex
-        manufacturer: Milton Bradley
-        system_folders:
-            - vectrex
-        extensions:
-            - bin
-            - gam
-            - vec
             - zip
             - 7z
 
@@ -755,7 +833,7 @@ library:
 
 
     - neogeo:
-        name: Neo Geo
+        name: NEO•GEO MVS
         manufacturer: SNK
         system_folders:
             - neogeo
