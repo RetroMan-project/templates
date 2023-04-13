@@ -4,18 +4,11 @@ library:
   template_version: 1.2
   gamelist_file: null
   systems:
-    
-    - 32x:
-        name: Mega Drive 32X
-        manufacturer: SEGA
-        system_folders:
-            - 32x
 
     - mame:
         name: MAME
         manufacturer: MAME
         system_folders:
-            - arcade
             - mame
         extensions:
             - zip
@@ -26,18 +19,20 @@ library:
         manufacturer: FinalBurn Neo
         system_folders:
             - fbneo
+            - finalburn
         extensions:
             - zip
             - 7z
 
     - laserdisc:
         name: LaserDisc
-        manufacturer: LaserDisc
+        manufacturer: DAPHNE
         system_folders:
+            - daphne
             - laserdisc
         extensions:
             - daphne
-            - ld
+            - squashfs
 
     - atomiswave:
         name: Sammy Atomiswave
@@ -113,6 +108,16 @@ library:
         extensions:
             - j64
             - jag
+
+    - jaguarcd:
+        name: Jaguar CD
+        manufacturer: Atari
+        system_folders:
+            - jaguarcd
+        extensions:
+            - iso
+            - cue
+            - chd
 
     - atarilynx:
         name: Atari Lynx
@@ -515,7 +520,6 @@ library:
             - wiiu
         extensions:
             - wua
-
     
     - switch:
         name: Switch
@@ -528,15 +532,18 @@ library:
             - xci
             - nsp
 
-    - jaguarcd:
-        name: Jaguar CD
-        manufacturer: Atari
+    - sg1000:
+        name: SG-1000
+        manufacturer: SEGA
         system_folders:
-            - jaguarcd
+            - sg1000
         extensions:
-            - iso
-            - cue
-            - chd
+            - sms
+            - gg
+            - sg
+            - mv
+            - bin
+            - rom
    
     - mastersystem:
         name: Master System
@@ -603,6 +610,23 @@ library:
           - bin
           - zip
           - 7z
+
+    - 32x:
+        name: Mega Drive 32X
+        manufacturer: SEGA
+        system_folders:
+            - 32x
+        extensions:
+        - bin
+        - gen
+        - smd
+        - md
+        - 32x
+        - cue
+        - iso
+        - sms
+        - 68k
+        - chd
     
     - dreamcast:
         name: Dreamcast
@@ -704,16 +728,6 @@ library:
             - ngpc
         extensions:
             - ngc
-            - zip
-            - 7z
-
-    - sg1000:
-        name: SG-1000
-        manufacturer: SEGA
-        system_folders:
-            - sg1000
-        extensions:
-            - sg
             - zip
             - 7z
 
