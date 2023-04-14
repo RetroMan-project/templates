@@ -391,7 +391,7 @@ library:
 
     - pcenginecd:
         name: PC Engine CD
-        name_alt: {(us,TurboGrafx-CD)}
+        name_alt: ({(us,TurboGrafx-CD)})
         manufacturer: NEC
         system_folders:
             - pcenginecd
@@ -673,7 +673,7 @@ library:
         name: Master System
         manifacturer: SEGA
         name_alt: Mark III
-        release: {
+        release: ({
             (jp,18-10-1987),
             (fr,01-09-1987),
             (us,01-10-1986),
@@ -683,7 +683,7 @@ library:
             (de,01-10-1986),
             (it,01-11-1986),
             (kr,01-04-1989)
-            }
+            })
         system_folders:
           - mastersystem
           - ms
@@ -697,13 +697,13 @@ library:
         name: Megadrive
         manifacturer: SEGA
         name_us: Genesis
-        release: {
+        release: ({
             (jp,29-10-1988),
             (eu,01-11-1990),
             (us,14-07-1989),
             (uk,14-08-1990),
             (br,01-12-1990)
-            }
+            })
         system_folders:
           - megadrive
           - genesis
@@ -722,7 +722,7 @@ library:
         name: Megadrive (Japan)
         manifacturer: SEGA
         name_us: Genesis
-        release: {(jp,29-10-1988)}
+        release: ({(jp,29-10-1988)})
         system_folders:
           - megadrivejp
         extensions:
